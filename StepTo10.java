@@ -1,6 +1,8 @@
 package practice;
 
 public class StepTo10 {
+  // there are totally 10 steps, and each time you can only walk 2 or 3 steps
+  // how many possibilities could you choose to step onto this 10 steps?
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
