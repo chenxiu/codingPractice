@@ -5,7 +5,7 @@ public class StepTo10 {
   // how many possibilities could you choose to step onto this 10 steps?
 
   public static void main(String[] args) {
-    // TODO Auto-generated method stub
+
     int total = 10;
     int step1 = 2;
     int step2 = 3;
@@ -24,7 +24,7 @@ public class StepTo10 {
       for (int j = 0; j <= total / step1; j++) {
         if ((i * step2 + j * step1) == total)
           cnt++;
-        System.out.println("i:" + i + " j: " + j + " cnt: " + cnt);
+        // System.out.println("i:" + i + " j: " + j + " cnt: " + cnt);
       }
     }
     return cnt;
