@@ -5,7 +5,7 @@ public class UniqueBinarySearchTrees_96 {
   public static void main(String[] args) {
     // TODO Auto-generated method stub
 
-    int n = 6;
+    int n = 7;
     System.out.println(numTrees(n));
 
   }
