@@ -1,6 +1,6 @@
 package practice;
 
-public class UniqueBinarySearchTrees_96 {
+public class UniqueBinarySearchTrees_95 {
 
   public static void main(String[] args) {
     // TODO Auto-generated method stub
