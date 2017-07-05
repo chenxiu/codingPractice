@@ -30,7 +30,7 @@ Bonus points if you could solve it both recursively and iteratively.
 		TreeNode tree1_l = new TreeNode(2);
 		TreeNode tree1_l_l = new TreeNode(3);
 		TreeNode tree1_r = new TreeNode(2);
-		TreeNode tree1_r_r = new TreeNode(4);
+		TreeNode tree1_r_r = new TreeNode(3);
 		tree1.left = tree1_l;
 		tree1.left.left = tree1_l_l;
 		tree1.right = tree1_r;
