@@ -30,7 +30,7 @@ Bonus points if you could solve it both recursively and iteratively.
 		TreeNode tree1_l = new TreeNode(2);
 		TreeNode tree1_l_l = new TreeNode(3);
 		TreeNode tree1_r = new TreeNode(2);
-		TreeNode tree1_r_r = new TreeNode(3);
+		TreeNode tree1_r_r = new TreeNode(4);
 		tree1.left = tree1_l;
 		tree1.left.left = tree1_l_l;
 		tree1.right = tree1_r;
@@ -43,13 +43,13 @@ Bonus points if you could solve it both recursively and iteratively.
 		if (root == null)
 			return true;
 		TreeNode newTree = new TreeNode(root.val);
-		newTree = generateSymmetricTree(root, newTree);
+		generateSymmetricTree(root, newTree);
 
 		if(isSameTree(root, newTree)) return true;
 		return false;
 	}
 
-	private static TreeNode generateSymmetricTree(TreeNode root, TreeNode tree2) {
+	private static void generateSymmetricTree(TreeNode root, TreeNode tree2) {
 		if(root.left!=null){
 			TreeNode right = new TreeNode(root.left.val);
 			tree2.right = right;
@@ -61,8 +61,7 @@ Bonus points if you could solve it both recursively and iteratively.
 			generateSymmetricTree(root.right, tree2.left);
 		}
 		if(root.left==null && root.right==null)
-			return tree2;
-		return tree2;
+			return;
 	}
 
 	public static boolean isSameTree(TreeNode p, TreeNode q) {
